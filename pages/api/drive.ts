@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { google } from 'googleapis';
-import { listFiles } from '../../../../lib/googleDriveService';
+import { listFiles } from '../../../../lib/googleDriveService'; // Adjusted path
 
 const auth = new google.auth.GoogleAuth({
-  keyFile: './client_secret_1091609749211-972p73qlm94pou8ctm12vqcq8qp0ooqf.apps.googleusercontent.com.json', // Path to your credentials file
+  keyFile: 'path/to/your/credentials.json', // Path to your credentials file
   scopes: ['https://www.googleapis.com/auth/drive.readonly'],
 });
 
@@ -15,4 +15,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch files' });
   }
-} 
+}
