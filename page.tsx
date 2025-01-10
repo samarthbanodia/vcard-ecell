@@ -1,4 +1,4 @@
-import SingleSpeakerVCard from '../components/single-speaker-vcard'
+import SingleSpeakerVCard from './single-speaker-vcard'
 
 export default function SpeakerPage() {
   return (
