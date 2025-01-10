@@ -3,7 +3,7 @@ import { google } from 'googleapis';
 import { listFiles } from '../../../../lib/googleDriveService'; // Adjusted path
 
 const auth = new google.auth.GoogleAuth({
-  keyFile: 'path/to/your/credentials.json', // Path to your credentials file
+  keyFile: './client_secret_1091609749211-972p73qlm94pou8ctm12vqcq8qp0ooqf.apps.googleusercontent.com.json', // Path to your credentials file
   scopes: ['https://www.googleapis.com/auth/drive.readonly'],
 });
 
